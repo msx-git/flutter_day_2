@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_day_2/task_1/cards.dart';
 import 'package:flutter_day_2/task_2/calculators.dart';
+import 'package:flutter_day_2/task_3/todo_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,9 +32,7 @@ class _MainPageState extends State<MainPage> {
   final List<Widget> pages = [
     const Cards(),
     const Calculators(),
-    const Center(
-      child: Text("Task-3"),
-    ),
+    const TodoApp(),
   ];
 
   changePage(index) => setState(() => _pageIndex = index);
