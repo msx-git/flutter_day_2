@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_day_2/task_1/cards.dart';
-
-import 'task_1/widgets/card_1.dart';
-import 'task_1/widgets/card_2.dart';
+import 'package:flutter_day_2/task_2/calculators.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,9 +30,7 @@ class _MainPageState extends State<MainPage> {
 
   final List<Widget> pages = [
     const Cards(),
-    const Center(
-      child: Text("Task-2"),
-    ),
+    const Calculators(),
     const Center(
       child: Text("Task-3"),
     ),
